@@ -1,26 +1,25 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* brand 색상 제거 (사용 안함) */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* gray scale */
+  --color-gray-50: #fafafa; /* 거의 흰색 */
+  --color-gray-100: #f5f5f5; /* 아주 연한 그레이 */
+  --color-gray-200: #e5e5e5;
+  --color-gray-300: #d4d4d4;
+  --color-gray-400: #a3a3a3;
+  --color-gray-500: #737373;
+  --color-gray-600: #525252;
+  --color-gray-700: #404040;
+  --color-gray-800: #262626; /* 아주 짙은 그레이 */
+  --color-gray-900: #171717; /* 거의 블랙 */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* white */
+  --color-white: #ffffff;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* 버튼용 짙은 그레이 */
+  --color-button-bg: var(--color-gray-900);
+  --color-button-hover-bg: var(--color-gray-800);
 }
